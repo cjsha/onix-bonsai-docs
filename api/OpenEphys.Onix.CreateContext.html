@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CreateContext </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CreateContext ">
+      
+      <meta name="description" content="Creates the context in which all devices are contained. The driver to be used, and the index, are available here.">
+      <link rel="icon" href="../favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/neurogears/onix-refactor/new/main/apiSpec/new?filename=OpenEphys_Onix_CreateContext.md&amp;value=---%0Auid%3A%20OpenEphys.Onix.CreateContext%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OpenEphys.Onix.CreateContext">
+
+<h1 id="OpenEphys_Onix_CreateContext" data-uid="OpenEphys.Onix.CreateContext" class="text-break">
+  CreateContext
+  <a class="header-action link-secondary" title="View source" href="https://github.com/neurogears/onix-refactor/blob/main/OpenEphys.Onix/OpenEphys.Onix/CreateContext.cs/#L12"><i class="bi bi-code-slash"></i></a>
+</h1>
+
+
+<div class="markdown summary"><p>Creates the context in which all devices are contained. The driver to be used,
+and the index, are available here.</p>
+</div>
+<div class="markdown level0 remarks"></div>
+
+
+<div class="markdown conceptual"></div>
+
+
+
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Type</th> 
+    <th>Description</th>
+  </tr>
+
+  <tr>
+    <td id="OpenEphys_Onix_CreateContext_Driver" data-uid="OpenEphys.Onix.CreateContext.Driver"><code>Driver</code></td>
+    <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+    <td><p>Represents the driver that is used to communicate with hardware. Possible values are
+&quot;riffa&quot;, &quot;test&quot;, and &quot;ft600&quot;</p>
+</td>
+  </tr>
+
+
+  <tr>
+    <td id="OpenEphys_Onix_CreateContext_Index" data-uid="OpenEphys.Onix.CreateContext.Index"><code>Index</code></td>
+    <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+    <td><p>Represents the index specifying the physical slot occupied by hardware being controlled</p>
+</td>
+  </tr>
+
+</table>
+
+
+
+
+
+
+<h2>Inputs/Outputs</h2>
+<table>
+  <tr>
+    <th>Input/Output</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+
+
+
+  <tr>
+    <td>Output</td>
+    <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="OpenEphys.Onix.ContextTask.html">ContextTask</a>&gt;</td>
+    <td></td>
+  </tr>
+
+
+</table>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/neurogears/onix-refactor/blob/main/OpenEphys.Onix/OpenEphys.Onix/CreateContext.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          &copy; 2024 Open Ephys and Contributors. Made with <a href="https://dotnet.github.io/docfx">docfx</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

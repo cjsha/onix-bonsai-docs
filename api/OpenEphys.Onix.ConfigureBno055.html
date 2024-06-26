@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ConfigureBno055 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ConfigureBno055 ">
+      
+      <meta name="description" content="Sink node that configures a BNO055 device.">
+      <link rel="icon" href="../favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/cjsha/onix-bonsai-docs/blob/main/apidoc/OpenEphys_Onix_ConfigureBno055.md/#L2">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OpenEphys.Onix.ConfigureBno055">
+
+<h1 id="OpenEphys_Onix_ConfigureBno055" data-uid="OpenEphys.Onix.ConfigureBno055" class="text-break">
+  ConfigureBno055
+  <a class="header-action link-secondary" title="View source" href="https://github.com/neurogears/onix-refactor/blob/main/OpenEphys.Onix/OpenEphys.Onix/ConfigureBno055.cs/#L9"><i class="bi bi-code-slash"></i></a>
+</h1>
+
+
+<div class="markdown summary"><p>Sink node that configures a BNO055 device.</p>
+</div>
+<div class="markdown level0 remarks"></div>
+
+
+<div class="markdown conceptual"><!---
+> [!NOTE]
+> This was not the best node to start with because the BNO is not a device in itself. Moreover, this page's content probably isn't all correct. In any case, I think it suffices to convey the overall gist for feedback.
+
+## Introduction
+
+The [`ConfigureBno055`](xref:OpenEphys.Onix.ConfigureBno055) node represents a sink operator that configures the BNO055 datastream. 
+--->
+<p>This is the minimal workflow to enable a headstage's orientation datastream:</p>
+<div class="workflow"><p><img src="../workflows/create-context.bonsai" alt="CreateContext"></p>
+</div>
+<!---
+The BNO055 is an IMU (inertial momentum unit) on many headstages or miniscopes that provides orientation data. The `ConfigureBno055` node is required when acquiring orientation data from a headstage or miniscope that has a BNO055. For more information on hardware, refer to the [Onix Hardware Documentation](https://open-ephys.github.io/onix-docs). 
+
+#### Inputs/Outputs
+
+| Input/Output | Type          | Description                                                                                                                      |    
+| ------------ | ------------- | -------------------------------------------------------------------------------------------------------------------------------- |  
+| Input        | `ContextTask` | This item is used in the top-level ONIX configuration chain to configure ONIX hardware and is sourced by a `CreateContext` node. |
+| Output       | `ContextTask` | This item is used in the top-level ONIX configuration chain to configure ONIX hardware and is sunk by a `StartAcquisition` node. |
+
+#### Properties
+
+| Property Name | Type      |       Range     | Description                                                                             |    
+| ------------- | --------- | --------------- | --------------------------------------------------------------------------------------- | 
+| `Enable`      | `Boolean` | `False`, `True` | `False` disables the BNO055 on the device.<br>`True` enables the BNO055 on the  device. |
+
+### Tutorial
+
+For examples workflows, refer to the [BNO055 Tutorial](~/tutorials/rhs2116-tut.md).
+
+*Technical Details* is probably a better title for the next section, but I think *Nerd Stuff* is more fun. Everything below the next header is auto-generated text.
+
+## Nerd Stuff
+
+--->
+</div>
+
+
+
+
+
+
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Type</th> 
+    <th>Description</th>
+  </tr>
+
+  <tr>
+    <td id="OpenEphys_Onix_ConfigureBno055_Enable" data-uid="OpenEphys.Onix.ConfigureBno055.Enable"><code>Enable</code></td>
+    <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+    <td><p>Specifies if the BNO055 device is enabled. If it is set to true,
+this device is available to stream data while the workflow is running.</p>
+</td>
+  </tr>
+
+</table>
+
+
+
+
+
+
+<h2>Inputs/Outputs</h2>
+<table>
+  <tr>
+    <th>Input/Output</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+
+
+  <tr>
+    <td>Input</td>
+    <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="OpenEphys.Onix.ContextTask.html">ContextTask</a>&gt;</td>
+    <td><p>Observable that holds a <a class="xref" href="OpenEphys.Onix.ContextTask.html">ContextTask</a></p>
+</td>
+  </tr>
+
+
+
+  <tr>
+    <td>Output</td>
+    <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="OpenEphys.Onix.ContextTask.html">ContextTask</a>&gt;</td>
+    <td></td>
+  </tr>
+
+
+</table>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/neurogears/onix-refactor/blob/main/OpenEphys.Onix/OpenEphys.Onix/ConfigureBno055.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          &copy; 2024 Open Ephys and Contributors. Made with <a href="https://dotnet.github.io/docfx">docfx</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

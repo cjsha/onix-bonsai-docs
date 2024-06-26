@@ -1,0 +1,302 @@
+{
+  "README.html": {
+    "href": "README.html",
+    "title": "onix-docs",
+    "keywords": "onix-docs Documentation, technical reference manual, and examples for the Bonsai ONI packages Building docs locally To build everything, including the Bonsai workflows, and view locally, run .\\build.ps1 docfx.json --serve To build the project and view locally, run docfx docfx.json --serve"
+  },
+  "api/OpenEphys.Onix.AnalogInput.html": {
+    "href": "api/OpenEphys.Onix.AnalogInput.html",
+    "title": "Class AnalogInput",
+    "keywords": "AnalogInput Properties Property Type Description BufferSize int DataType AnalogIODataType DeviceName string Inputs/Outputs Input/Output Type Description Output IObservable<AnalogInputDataFrame> An observable sequence of data elements of type AnalogInputDataFrame."
+  },
+  "api/OpenEphys.Onix.AnalogInputDataFrame.html": {
+    "href": "api/OpenEphys.Onix.AnalogInputDataFrame.html",
+    "title": "Class AnalogInputDataFrame",
+    "keywords": "AnalogInputDataFrame Properties Property Type Description AnalogData Mat Clock ulong[] HubSyncCounter ulong[]"
+  },
+  "api/OpenEphys.Onix.AnalogOutput.html": {
+    "href": "api/OpenEphys.Onix.AnalogOutput.html",
+    "title": "Class AnalogOutput",
+    "keywords": "AnalogOutput Properties Property Type Description DataType AnalogIODataType DeviceName string Inputs/Outputs Input/Output Type Description Input IObservable<Mat> The source sequence to process. Output IObservable<Mat> An observable sequence with elements of type Mat. Input IObservable<short[]> Output IObservable<short[]> Input IObservable<float[]> Output IObservable<float[]>"
+  },
+  "api/OpenEphys.Onix.Bno055Data.html": {
+    "href": "api/OpenEphys.Onix.Bno055Data.html",
+    "title": "Class Bno055Data",
+    "keywords": "Bno055Data test blah Properties Property Type Description DeviceName string Inputs/Outputs Input/Output Type Description Output IObservable<Bno055DataFrame> An observable sequence of data elements of type Bno055DataFrame."
+  },
+  "api/OpenEphys.Onix.Bno055DataFrame.html": {
+    "href": "api/OpenEphys.Onix.Bno055DataFrame.html",
+    "title": "Class Bno055DataFrame",
+    "keywords": "Bno055DataFrame Properties Property Type Description Acceleration Vector3 Calibration Bno055CalibrationFlags Clock ulong EulerAngle Vector3 Gravity Vector3 HubClock ulong Quaternion Quaternion Temperature int"
+  },
+  "api/OpenEphys.Onix.ConfigureAnalogIO.html": {
+    "href": "api/OpenEphys.Onix.ConfigureAnalogIO.html",
+    "title": "Class ConfigureAnalogIO",
+    "keywords": "ConfigureAnalogIO Properties Property Type Description Direction0 AnalogIODirection Direction1 AnalogIODirection Direction10 AnalogIODirection Direction11 AnalogIODirection Direction2 AnalogIODirection Direction3 AnalogIODirection Direction4 AnalogIODirection Direction5 AnalogIODirection Direction6 AnalogIODirection Direction7 AnalogIODirection Direction8 AnalogIODirection Direction9 AnalogIODirection Enable bool InputRange0 AnalogIOVoltageRange InputRange1 AnalogIOVoltageRange InputRange10 AnalogIOVoltageRange InputRange11 AnalogIOVoltageRange InputRange2 AnalogIOVoltageRange InputRange3 AnalogIOVoltageRange InputRange4 AnalogIOVoltageRange InputRange5 AnalogIOVoltageRange InputRange6 AnalogIOVoltageRange InputRange7 AnalogIOVoltageRange InputRange8 AnalogIOVoltageRange InputRange9 AnalogIOVoltageRange Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ConfigureBno055.html": {
+    "href": "api/OpenEphys.Onix.ConfigureBno055.html",
+    "title": "Class ConfigureBno055",
+    "keywords": "ConfigureBno055 Sink node that configures a BNO055 device. This is the minimal workflow to enable a headstage's orientation datastream: Properties Property Type Description Enable bool Specifies if the BNO055 device is enabled. If it is set to true, this device is available to stream data while the workflow is running. Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> Observable that holds a ContextTask Output IObservable<ContextTask>"
+  },
+  "api/OpenEphys.Onix.ConfigureBreakoutBoard.html": {
+    "href": "api/OpenEphys.Onix.ConfigureBreakoutBoard.html",
+    "title": "Class ConfigureBreakoutBoard",
+    "keywords": "ConfigureBreakoutBoard Properties Property Type Description AnalogIO ConfigureAnalogIO Heartbeat ConfigureHeartbeat MemoryMonitor ConfigureMemoryMonitor"
+  },
+  "api/OpenEphys.Onix.ConfigureDS90UB9x.html": {
+    "href": "api/OpenEphys.Onix.ConfigureDS90UB9x.html",
+    "title": "Class ConfigureDS90UB9x",
+    "keywords": "ConfigureDS90UB9x Properties Property Type Description Enable bool Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ConfigureFmcLinkController.html": {
+    "href": "api/OpenEphys.Onix.ConfigureFmcLinkController.html",
+    "title": "Class ConfigureFmcLinkController",
+    "keywords": "ConfigureFmcLinkController Properties Property Type Description HubConfiguration HubConfiguration Inputs/Outputs Input/Output Type Description Input DeviceContext Output bool Input DeviceContext Output bool Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ConfigureHarpSyncInput.html": {
+    "href": "api/OpenEphys.Onix.ConfigureHarpSyncInput.html",
+    "title": "Class ConfigureHarpSyncInput",
+    "keywords": "ConfigureHarpSyncInput Properties Property Type Description Enable bool Source HarpSyncSource Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ConfigureHeadstage64.html": {
+    "href": "api/OpenEphys.Onix.ConfigureHeadstage64.html",
+    "title": "Class ConfigureHeadstage64",
+    "keywords": "ConfigureHeadstage64 Properties Property Type Description Bno055 ConfigureBno055 ElectricalStimulator ConfigureHeadstage64ElectricalStimulator Port PortName Rhd2164 ConfigureRhd2164 TS4231 ConfigureTS4231"
+  },
+  "api/OpenEphys.Onix.ConfigureHeadstage64ElectricalStimulator.html": {
+    "href": "api/OpenEphys.Onix.ConfigureHeadstage64ElectricalStimulator.html",
+    "title": "Class ConfigureHeadstage64ElectricalStimulator",
+    "keywords": "ConfigureHeadstage64ElectricalStimulator Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ConfigureHeartbeat.html": {
+    "href": "api/OpenEphys.Onix.ConfigureHeartbeat.html",
+    "title": "Class ConfigureHeartbeat",
+    "keywords": "ConfigureHeartbeat Properties Property Type Description BeatsPerSecond uint Enable bool Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ConfigureLoadTester.html": {
+    "href": "api/OpenEphys.Onix.ConfigureLoadTester.html",
+    "title": "Class ConfigureLoadTester",
+    "keywords": "ConfigureLoadTester Properties Property Type Description FrameHz uint ReceivedWords uint TransmittedWords uint Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ConfigureMemoryMonitor.html": {
+    "href": "api/OpenEphys.Onix.ConfigureMemoryMonitor.html",
+    "title": "Class ConfigureMemoryMonitor",
+    "keywords": "ConfigureMemoryMonitor Properties Property Type Description Enable bool SampleFrequency uint Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ConfigureNeuropixelsV2e.html": {
+    "href": "api/OpenEphys.Onix.ConfigureNeuropixelsV2e.html",
+    "title": "Class ConfigureNeuropixelsV2e",
+    "keywords": "ConfigureNeuropixelsV2e Properties Property Type Description Enable bool Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ConfigureNeuropixelsV2eBeta.html": {
+    "href": "api/OpenEphys.Onix.ConfigureNeuropixelsV2eBeta.html",
+    "title": "Class ConfigureNeuropixelsV2eBeta",
+    "keywords": "ConfigureNeuropixelsV2eBeta Properties Property Type Description Enable bool EnableLed bool Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ConfigureNeuropixelsV2eBetaHeadstage.html": {
+    "href": "api/OpenEphys.Onix.ConfigureNeuropixelsV2eBetaHeadstage.html",
+    "title": "Class ConfigureNeuropixelsV2eBetaHeadstage",
+    "keywords": "ConfigureNeuropixelsV2eBetaHeadstage Properties Property Type Description Bno055 ConfigureNeuropixelsV2eBno055 NeuropixelsV2Beta ConfigureNeuropixelsV2eBeta Port PortName"
+  },
+  "api/OpenEphys.Onix.ConfigureNeuropixelsV2eBno055.html": {
+    "href": "api/OpenEphys.Onix.ConfigureNeuropixelsV2eBno055.html",
+    "title": "Class ConfigureNeuropixelsV2eBno055",
+    "keywords": "ConfigureNeuropixelsV2eBno055 Properties Property Type Description Enable bool Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ConfigureNeuropixelsV2eHeadstage.html": {
+    "href": "api/OpenEphys.Onix.ConfigureNeuropixelsV2eHeadstage.html",
+    "title": "Class ConfigureNeuropixelsV2eHeadstage",
+    "keywords": "ConfigureNeuropixelsV2eHeadstage Properties Property Type Description Bno055 ConfigureNeuropixelsV2eBno055 NeuropixelsV2 ConfigureNeuropixelsV2e Port PortName"
+  },
+  "api/OpenEphys.Onix.ConfigureRhd2164.html": {
+    "href": "api/OpenEphys.Onix.ConfigureRhd2164.html",
+    "title": "Class ConfigureRhd2164",
+    "keywords": "ConfigureRhd2164 Properties Property Type Description AmplifierDataFormat Rhd2164AmplifierDataFormat AnalogHighCutoff Rhd2164AnalogHighCutoff AnalogLowCutoff Rhd2164AnalogLowCutoff DspCutoff Rhd2164DspCutoff Enable bool Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ConfigureTS4231.html": {
+    "href": "api/OpenEphys.Onix.ConfigureTS4231.html",
+    "title": "Class ConfigureTS4231",
+    "keywords": "ConfigureTS4231 Properties Property Type Description Enable bool Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ConfigureTest0.html": {
+    "href": "api/OpenEphys.Onix.ConfigureTest0.html",
+    "title": "Class ConfigureTest0",
+    "keywords": "ConfigureTest0 Properties Property Type Description DummyCount uint Enable bool FrameRateHz uint Message short Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ContextTask.html": {
+    "href": "api/OpenEphys.Onix.ContextTask.html",
+    "title": "Class ContextTask",
+    "keywords": "ContextTask Properties Property Type Description AcquisitionClockHz uint BlockReadSize int BlockWriteSize int DeviceTable Dictionary<uint, Device> HardwareAddress int HubState PassthroughState MaxReadFrameSize uint MaxWriteFrameSize uint SystemClockHz uint Inputs/Outputs Input/Output Type Description Input uint Output Hub Input uint Output uint Output Frame Input uint Input IntPtr Input int Input uint Input T Input uint Input T[]"
+  },
+  "api/OpenEphys.Onix.CreateContext.html": {
+    "href": "api/OpenEphys.Onix.CreateContext.html",
+    "title": "Class CreateContext",
+    "keywords": "CreateContext Creates the context in which all devices are contained. The driver to be used, and the index, are available here. Properties Property Type Description Driver string Represents the driver that is used to communicate with hardware. Possible values are \"riffa\", \"test\", and \"ft600\" Index int Represents the index specifying the physical slot occupied by hardware being controlled Inputs/Outputs Input/Output Type Description Output IObservable<ContextTask>"
+  },
+  "api/OpenEphys.Onix.DeviceContext.html": {
+    "href": "api/OpenEphys.Onix.DeviceContext.html",
+    "title": "Class DeviceContext",
+    "keywords": "DeviceContext Properties Property Type Description Address uint Context ContextTask DeviceMetadata Device Inputs/Outputs Input/Output Type Description Input uint Output uint Input IntPtr Input int Input uint Input uint Input T Input T[]"
+  },
+  "api/OpenEphys.Onix.DeviceFactory.html": {
+    "href": "api/OpenEphys.Onix.DeviceFactory.html",
+    "title": "Class DeviceFactory",
+    "keywords": "DeviceFactory Abstract class that implements a Sink<TSource> node."
+  },
+  "api/OpenEphys.Onix.DeviceNameConverter.html": {
+    "href": "api/OpenEphys.Onix.DeviceNameConverter.html",
+    "title": "Class DeviceNameConverter",
+    "keywords": "DeviceNameConverter Provides a type converter to convert a device name to and from other representations. It also provides a mechanism to find existing devices declared in the workflow. Inputs/Outputs Input/Output Type Description Input ITypeDescriptorContext An ITypeDescriptorContext that provides a format context that can be used to extract additional information about the environment from which this converter is invoked. This parameter or properties of this parameter can be null. Output TypeConverter.StandardValuesCollection A TypeConverter.StandardValuesCollection containing the set of available devices. Only devices matching the specified type will be included. Input ITypeDescriptorContext An ITypeDescriptorContext that provides a format context. Output bool true if GetStandardValues() should be called to find a common set of values the object supports; otherwise, false."
+  },
+  "api/OpenEphys.Onix.HarpSyncInputData.html": {
+    "href": "api/OpenEphys.Onix.HarpSyncInputData.html",
+    "title": "Class HarpSyncInputData",
+    "keywords": "HarpSyncInputData Properties Property Type Description DeviceName string Inputs/Outputs Input/Output Type Description Output IObservable<HarpSyncInputDataFrame> An observable sequence of data elements of type HarpSyncInputDataFrame."
+  },
+  "api/OpenEphys.Onix.HarpSyncInputDataFrame.html": {
+    "href": "api/OpenEphys.Onix.HarpSyncInputDataFrame.html",
+    "title": "Class HarpSyncInputDataFrame",
+    "keywords": "HarpSyncInputDataFrame Properties Property Type Description Clock ulong HarpTime uint HubClock ulong"
+  },
+  "api/OpenEphys.Onix.Headstage64ElectricalStimulatorTrigger.html": {
+    "href": "api/OpenEphys.Onix.Headstage64ElectricalStimulatorTrigger.html",
+    "title": "Class Headstage64ElectricalStimulatorTrigger",
+    "keywords": "Headstage64ElectricalStimulatorTrigger Properties Property Type Description BurstPulseCount uint DeviceName string Enable bool InterBurstInterval uint InterPhaseCurrent double InterPhaseInterval uint InterPulseInterval uint PhaseOneCurrent double PhaseOneDuration uint PhaseTwoCurrent double PhaseTwoDuration uint PowerEnable bool TrainBurstCount uint TrainDelay uint Inputs/Outputs Input/Output Type Description Input IObservable<bool> The source sequence to process. Output IObservable<bool> An observable sequence with elements of type bool."
+  },
+  "api/OpenEphys.Onix.HeartbeatCounter.html": {
+    "href": "api/OpenEphys.Onix.HeartbeatCounter.html",
+    "title": "Class HeartbeatCounter",
+    "keywords": "HeartbeatCounter Properties Property Type Description DeviceName string Inputs/Outputs Input/Output Type Description Output IObservable<ManagedFrame<ushort>> An observable sequence of data elements of type OpenEphys.Onix.ManagedFrame{System.UInt16}."
+  },
+  "api/OpenEphys.Onix.HubDeviceFactory.html": {
+    "href": "api/OpenEphys.Onix.HubDeviceFactory.html",
+    "title": "Class HubDeviceFactory",
+    "keywords": "HubDeviceFactory Properties Property Type Description Name string Gets the name of the element. Inputs/Outputs Input/Output Type Description Input string Output string Input IObservable<ContextTask> The source sequence to process. Output IObservable<ContextTask> An observable sequence with elements of type ContextTask."
+  },
+  "api/OpenEphys.Onix.ManagedFrame-1.html": {
+    "href": "api/OpenEphys.Onix.ManagedFrame-1.html",
+    "title": "Class ManagedFrame<T>",
+    "keywords": "ManagedFrame<T> Managed copy of oni.Frame with strongly-typed data array. Properties Property Type Description DeviceAddress uint FrameClock ulong"
+  },
+  "api/OpenEphys.Onix.MemoryUsage.html": {
+    "href": "api/OpenEphys.Onix.MemoryUsage.html",
+    "title": "Class MemoryUsage",
+    "keywords": "MemoryUsage Properties Property Type Description DeviceName string Inputs/Outputs Input/Output Type Description Output IObservable<MemoryUsageDataFrame> An observable sequence of data elements of type MemoryUsageDataFrame."
+  },
+  "api/OpenEphys.Onix.MemoryUsageDataFrame.html": {
+    "href": "api/OpenEphys.Onix.MemoryUsageDataFrame.html",
+    "title": "Class MemoryUsageDataFrame",
+    "keywords": "MemoryUsageDataFrame Properties Property Type Description BytesUsed uint DeviceAddress uint FrameClock ulong HubClock ulong PercentUsed double"
+  },
+  "api/OpenEphys.Onix.NeuropixelsV2eBetaData.html": {
+    "href": "api/OpenEphys.Onix.NeuropixelsV2eBetaData.html",
+    "title": "Class NeuropixelsV2eBetaData",
+    "keywords": "NeuropixelsV2eBetaData Properties Property Type Description BufferSize int DeviceName string ProbeIndex NeuropixelsV2Probe Inputs/Outputs Input/Output Type Description Output IObservable<NeuropixelsV2eBetaDataFrame> An observable sequence of data elements of type NeuropixelsV2eBetaDataFrame."
+  },
+  "api/OpenEphys.Onix.NeuropixelsV2eBetaDataFrame.html": {
+    "href": "api/OpenEphys.Onix.NeuropixelsV2eBetaDataFrame.html",
+    "title": "Class NeuropixelsV2eBetaDataFrame",
+    "keywords": "NeuropixelsV2eBetaDataFrame Properties Property Type Description AmplifierData Mat Clock ulong[] FrameCounter int[] HubClock ulong[]"
+  },
+  "api/OpenEphys.Onix.NeuropixelsV2eBno055Data.html": {
+    "href": "api/OpenEphys.Onix.NeuropixelsV2eBno055Data.html",
+    "title": "Class NeuropixelsV2eBno055Data",
+    "keywords": "NeuropixelsV2eBno055Data Properties Property Type Description DeviceName string Inputs/Outputs Input/Output Type Description Output IObservable<Bno055DataFrame> An observable sequence of data elements of type Bno055DataFrame. Input IObservable<TSource> Output IObservable<Bno055DataFrame>"
+  },
+  "api/OpenEphys.Onix.NeuropixelsV2eData.html": {
+    "href": "api/OpenEphys.Onix.NeuropixelsV2eData.html",
+    "title": "Class NeuropixelsV2eData",
+    "keywords": "NeuropixelsV2eData Properties Property Type Description BufferSize int DeviceName string ProbeIndex NeuropixelsV2Probe Inputs/Outputs Input/Output Type Description Output IObservable<NeuropixelsV2eDataFrame> An observable sequence of data elements of type NeuropixelsV2eDataFrame."
+  },
+  "api/OpenEphys.Onix.NeuropixelsV2eDataFrame.html": {
+    "href": "api/OpenEphys.Onix.NeuropixelsV2eDataFrame.html",
+    "title": "Class NeuropixelsV2eDataFrame",
+    "keywords": "NeuropixelsV2eDataFrame Properties Property Type Description AmplifierData Mat Clock ulong[] HubClock ulong[]"
+  },
+  "api/OpenEphys.Onix.Rhd2164Config.html": {
+    "href": "api/OpenEphys.Onix.Rhd2164Config.html",
+    "title": "Class Rhd2164Config",
+    "keywords": "Rhd2164Config"
+  },
+  "api/OpenEphys.Onix.Rhd2164Data.html": {
+    "href": "api/OpenEphys.Onix.Rhd2164Data.html",
+    "title": "Class Rhd2164Data",
+    "keywords": "Rhd2164Data Properties Property Type Description BufferSize int DeviceName string Inputs/Outputs Input/Output Type Description Output IObservable<Rhd2164DataFrame> An observable sequence of data elements of type Rhd2164DataFrame."
+  },
+  "api/OpenEphys.Onix.Rhd2164DataFrame.html": {
+    "href": "api/OpenEphys.Onix.Rhd2164DataFrame.html",
+    "title": "Class Rhd2164DataFrame",
+    "keywords": "Rhd2164DataFrame Properties Property Type Description AmplifierData Mat AuxData Mat Clock ulong[] HubClock ulong[]"
+  },
+  "api/OpenEphys.Onix.SingleDeviceFactory.html": {
+    "href": "api/OpenEphys.Onix.SingleDeviceFactory.html",
+    "title": "Class SingleDeviceFactory",
+    "keywords": "SingleDeviceFactory Abstract class that implements a DeviceFactory for a single device. Properties Property Type Description DeviceAddress uint Represents the address of the current device. Device addresses must be unique across the workflow. DeviceName string Represents the name of the current device. Device names must be unique across the workflow, as they are used to link input/output nodes to a specific configured device. DeviceType Type Represents the type of the current device."
+  },
+  "api/OpenEphys.Onix.StartAcquisition.html": {
+    "href": "api/OpenEphys.Onix.StartAcquisition.html",
+    "title": "Class StartAcquisition",
+    "keywords": "StartAcquisition Combinator node that takes in a ContextTask and returns an oni.Frame by starting acquisition of data during runtime. Properties Property Type Description ReadSize int Number of bytes read during each driver access to the high-bandwidth read channel. This option allows control over the trade-off between closed-loop response time and overall bandwidth. The minimum value will provide the lowest response latency. Larger values will reduce frequency of reads, and may improve processing performance for high-bandwidth data sources. This minimum size of this option is determined by oni.Context.MaxReadFrameSize WriteSize int Number of bytes pre-allocated for calls to write data. A larger size will reduce the average amount of dynamic memory allocation system calls but will increase the cost of each of those calls. The minimum size of this option is determined by oni.Context.MaxWriteFrameSize. Inputs/Outputs Input/Output Type Description Input IObservable<ContextTask> Output IObservable<Frame>"
+  },
+  "api/OpenEphys.Onix.TS4231Data.html": {
+    "href": "api/OpenEphys.Onix.TS4231Data.html",
+    "title": "Class TS4231Data",
+    "keywords": "TS4231Data Properties Property Type Description DeviceName string Inputs/Outputs Input/Output Type Description Output IObservable<TS4231DataFrame> An observable sequence of data elements of type TS4231DataFrame."
+  },
+  "api/OpenEphys.Onix.TS4231DataFrame.html": {
+    "href": "api/OpenEphys.Onix.TS4231DataFrame.html",
+    "title": "Class TS4231DataFrame",
+    "keywords": "TS4231DataFrame Properties Property Type Description Clock ulong EnvelopeType TS4231Envelope EnvelopeWidth uint HubClock ulong SensorIndex int"
+  },
+  "api/OpenEphys.Onix.Test0Data.html": {
+    "href": "api/OpenEphys.Onix.Test0Data.html",
+    "title": "Class Test0Data",
+    "keywords": "Test0Data Properties Property Type Description BufferSize int DeviceName string Inputs/Outputs Input/Output Type Description Output IObservable<Test0DataFrame> An observable sequence of data elements of type Test0DataFrame."
+  },
+  "api/OpenEphys.Onix.Test0DataFrame.html": {
+    "href": "api/OpenEphys.Onix.Test0DataFrame.html",
+    "title": "Class Test0DataFrame",
+    "keywords": "Test0DataFrame Properties Property Type Description Clock ulong[] Dummy Mat HubClock ulong[] Message Mat"
+  },
+  "api/OpenEphys.Onix.html": {
+    "href": "api/OpenEphys.Onix.html",
+    "title": "Namespace OpenEphys.Onix",
+    "keywords": ""
+  },
+  "articles/getting_started.html": {
+    "href": "articles/getting_started.html",
+    "title": "Getting Started",
+    "keywords": "Getting Started Install To install OpenEphys.Onix, first install Bonsai here. Once Bonsai is installed, run Bonsai and use the Bonsai package manager to search for OpenEphys.Onix. Note Pull from here General Usage Node Type In Bonsai, all objects are called \"nodes\", and have a specific function associated with them depending on what they do; this can be Source, Sink, Combinator, Transform, or Condition. For ONIX nodes, they are all classified as either Source, Sink, or Combinator. Node Type Description Example ONIX nodes Source Generate event streams from devices or files CreateContext, Bno055Data, NeuropixelsV1eData Sink Save data or trigger external outputs ConfigureHeadstage64, ConfigureNeuropixelsV1eHeadstage Combinator Manage control flow or synchronize parallel inputs StartAcquisition Nodes are placed in the Bonsai editor and can be saved into a \"workflow\", which is a grouping of nodes and saved settings. This workflow can then be run to perform some task, depending on what nodes are placed. Property Categories There are specific categories of properties that define when a node's properties can be modified. Configuration properties are only settable when the workflow is not running, and for ONIX devices define how to initialize the device. Examples would be setting the number of channels to record from, the frame rate of a camera, or defining filters to apply to recording channels. Acquisition properties can be manipulated when the workflow is running as well as when it is not running. An example would be a waveform to send as a stimulus, which can be modified in real-time and sent to the device multiple times with different parameters. Initialize the ONI Context The CreateContext operator initializes the acquisition context, and it should be the first node you add to your workflow as it provides access to the hardware device table for all other configuration operators."
+  },
+  "articles/onix-bno055data.html": {
+    "href": "articles/onix-bno055data.html",
+    "title": "Bno055Data",
+    "keywords": "test blah"
+  },
+  "articles/onix-configurebno055.html": {
+    "href": "articles/onix-configurebno055.html",
+    "title": "ConfigureBno055",
+    "keywords": "This is the minimal workflow to enable a headstage's orientation datastream:"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "OpenEphys.Onix",
+    "keywords": "Warning These docs are under active development, feel free to contribute by either raising an issue or following the links saying Edit this page. OpenEphys.Onix OpenEphys.Onix is a library that can be used in Bonsai to acquire data from ONIX devices, such as the Open Ephys Acquisition Board. For more details on the ONI specification, check out this link, and to learn more about ONIX devices and their implemention of ONI, click here. Advantages While data can be acquired using programs other than Bonsai, there are a number of advantages that come from building OpenEphys.Onix as a Bonsai library. A major advantage is that it maintains maximal compatibility with open source programs, including OpenCV, DeepLabCut, and many more. Other major advantages include: Visual interface provided by building on top of Bonsai's foundation Time-stamped synchronization across multiple devices Combine data streams for real-time processing Quick Links Software Guide Technical Reference Tutorials New to Bonsai or OpenEphys.Onix? Start here! Nerd stuff here Check out our tutorials for useful workflows"
+  },
+  "tutorials/landing-page.html": {
+    "href": "tutorials/landing-page.html",
+    "title": "Tutorials",
+    "keywords": "Tutorials Note This is a placeholder, so that we can link to the Tutorials page without needing to link to a specific tutorial. This should be populated with details on how to use the tutorials, and maybe contain an automatically generated list of possible tutorials or classes of tutorials"
+  },
+  "tutorials/rhs2116-tut.html": {
+    "href": "tutorials/rhs2116-tut.html",
+    "title": "RHS2116 Tutorial",
+    "keywords": "RHS2116 Tutorial For more information on hardware, refer to the Onix Hardware Documentation for RHS2116. Tutorial 1 Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Workflow Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Important Parameters Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Explainer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Tutorial 2 Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Workflow Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Important Parameters Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Explainer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Tutorial 3 Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Workflow Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Important Parameters Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Explainer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "tutorials/uclaminiscopev4-tut.html": {
+    "href": "tutorials/uclaminiscopev4-tut.html",
+    "title": "UCLA Miniscope V4 Tutorial",
+    "keywords": "UCLA Miniscope V4 Tutorial For more information on hardware, refer to the Onix Hardware Documentation for UCLA Miniscope v4. Tutorial 1 Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Workflow Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Important Parameters Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Explainer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Tutorial 2 Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Workflow Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Important Parameters Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Explainer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Tutorial 3 Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Workflow Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Important Parameters Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Explainer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }
+}
